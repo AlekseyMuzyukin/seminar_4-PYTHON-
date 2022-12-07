@@ -1,8 +1,8 @@
 import re
 import itertools
 
-file1 = 'file.txt'
-file2 = 'file_2.txt'
+file_1 = 'file.txt'
+file_2 = 'file_2.txt'
 file_sum = 'file_summa.txt'
 
 
@@ -64,8 +64,8 @@ def write_to_file(file, pol):
         data.write(pol)
 
 
-pol1 = read_pol(file1)
-pol2 = read_pol(file2)
+pol1 = read_pol(file_1)
+pol2 = read_pol(file_2)
 pol_1 = convert_pol(pol1)
 pol_2 = convert_pol(pol2)
 
