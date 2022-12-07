@@ -8,4 +8,7 @@ poly = poly.replace('x**1+', 'x+')
 poly = poly.replace('x**0', '')
 poly += ('', '1')[poly[-1] == '+']
 poly = (poly, poly[:-2])[poly[-2:] == '**1']
-print(poly)
+
+data = open('file.txt','a')
+data.writelines(f'{poly}\n')
+data.closed
